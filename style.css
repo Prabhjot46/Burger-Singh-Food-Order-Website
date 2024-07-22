@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background-color: rgba(246, 240, 235, 1);
+    height: 100%;
+}
+.navbar{
+    max-width: 100vw;
+    background-color: white;
+    height: 135px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.5rem;
+}
+.logo img{
+    height: 70px;
+    width: 60px;
+    object-fit: contain;
+}
+
+.nav-list{
+    display: flex;
+    gap: 4.5rem;
+    font-size: 25px;
+    font-weight: 700;
+}
+.nav-list-item{
+    color: rgba(73, 33, 24, 1);
+    text-decoration: none;
+}
+.hero-content{
+    max-width: 1600px;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    
+    overflow: hidden;
+    margin: 125px 50px 50px 50px;
+    height: 720px;
+}
+.accordion{
+   height: inherit;
+   width: 20%;
+   position: relative;
+   flex-direction: row;
+
+   cursor: pointer;
+   transition: width .5s ease;
+   padding: 20px;
+
+}
+.accordion img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+
+}
+
+.accordion:hover img{
+    opacity: 0.6;
+}
+.accordion:hover{
+    width: 50%;
+    object-fit: cover;
+}
+.text-content{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 50px;
+    color: rgba(73, 33, 24, 1);
+    font-weight: 400;
+}
+
+
+.heading-title{
+    font-size: 53px;
+    font-weight: 700;
+    color: rgba(73, 33, 24, 1);
+    text-align: center;
+}
+.top-picks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 130px 50px ;
+    gap: 3rem;
+    
+}
+.img-container{
+    width: 80%;
+    
+}
+.img-container img{
+    width: 100%;
+    object-fit: cover;
+}
+.go-to-top{
+    text-align: right;
+    max-width: 960px;
+    font-size: 30px;
+    font-weight: 600;
+   
+    margin: 0 auto;
+}
+.footer-text{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+@media  screen and ( max-width: 1410px) {
+    .navbar{
+        height: 120px;
+    }
+    .nav-list{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .navbar{
+        height: 90px;
+    }
+    .nav-list{
+        font-size: 12px;
+        gap: 2rem;
+    }
+}
